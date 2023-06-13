@@ -9,7 +9,7 @@ pipeline {
                 script {
                     echo "test"
                 }
-                pipelineMaven(['skipInstall' : false, 'skipTests': false])
+                pipelineMaven(['skipTests' : false, 'skipInstall': false])
             }
         }
     }
