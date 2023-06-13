@@ -1,7 +1,7 @@
 library 'Jenkins DSL Library'
 
 pipeline {
-    agent none
+    agent any
     stages {
         stage ('Checkout') {
             agent {label 'agent'}
