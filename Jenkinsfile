@@ -3,7 +3,9 @@ library 'Jenkins DSL Library'
 pipeline {
     // agent any
     agent {
-        docker { image '4de70f53abee'}
+        docker {
+            image '4de70f53abee'
+            }
     }
     stages {
         stage ('Checkout') {
